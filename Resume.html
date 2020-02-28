@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500i,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -22,9 +23,8 @@
 
 <body>
 
-    <div class="container">
-
-        <header class="display-4" id="top"><strong> Mayra Alejandra Ramirez Regalado</strong></header>
+    <div class="container" id="top">
+        <h1><strong> Mayra Alejandra Ramirez Regalado</strong></h1>
         <hr>
         <div class="row">
             <!-- Contact info & icons -->
@@ -33,50 +33,48 @@
                 <aside>
                     <table class="buttons">
 
-                        <h3><u>CONTACT INFO:</u></h3>
+                        <h4><u>Contact info:</u></h4>
 
                         <tbody>
                             <tr>
                                 <td>
-                                    <a class="btn btn-sm" href="mailto:maiira.regalado@gmail.com" role="button">
+                                    <a class="btn btn-sm" type="button" href="mailto:maiira.regalado@gmail.com"
+                                        role="button" data-toggle="button">
                                         <img id="gmail" src="./imgs/gm.png" alt="gmail"> </a>
                                 </td>
 
                                 <td>
                                     <span class="links">
-                                        <a href="mailto:maiira.regalado@gmail.com">maiira.regalado@gmail.com</a>
+                                        <label>maiira.regalado@gmail.com</label>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+
                                     <img id="phone" src="./imgs/phone.png" class="rounded float-left" alt="phone">
                                 </td>
                                 <td> <span class="links">3332012819</span></td>
                             </tr>
+
                             <tr>
                                 <td>
-                                    <img id="slack" src="./imgs/slack.png" class="rounded float-left" alt="slack">
-                                </td>
-                                <td> <span class="links"><strong>Slack:</strong> Mayra Regalado</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img id="lin" src="./imgs/lin.png" class="rounded float-left" alt="lin">
+                                    <a class="btn btn-sm" href="http://linkedin.com/in/mayra-regalado" role="button">
+                                        <img id="lin" src="./imgs/lin.png" class="rounded float-left" alt="lin"></a>
                                 </td>
                                 <td>
                                     <span class="links">
-                                        <a
-                                            href="http://linkedin.com/in/mayra-regalado">linkedin.com/in/mayra-regalado</a>
+                                        <label>linkedin.com/in/mayra-regalado</label>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img id="git" src="./imgs/git.png" class="rounded float-left" alt="git">
+                                    <a class="btn btn-sm" href="http://github.com/Mayra-RR" type="button">
+                                        <img id="git" src="./imgs/git.png" class="rounded float-left" alt="git"></a>
                                 </td>
                                 <td> <span class="links">
-                                        <a href="http://github.com/Mayra-RR">github.com/Mayra-RR</a>
+                                        <label>github.com/Mayra-RR</label>
                                     </span>
                                 </td>
                             </tr>
@@ -88,94 +86,198 @@
 
             <!-- --------------------------INTRODUCTION---------------- -->
             <div class="col-lg-8">
-                <p class="lead">As an Industrial Designer, I have a strong ability to build products from
-                    scratch which gives me a sense of satisfaction knowing that my product design can help others.
-                    Thanks to
-                    my experience in product & industrial design I have acquire abilities that go from design
-                    thinking,
-                    teamwork, and delivering a final product to a client </p>
+                <article>
+                    <p id="intro">Being an Industrial Designer, I have a strong ability to build projects from scratch
+                        which gives
+                        me a sense of satisfaction knowing that my product design can help others. I am entering the
+                        tech industry, as technology has become essential and by enhancing my knowledge and skills of
+                        new technologies, I can make an impact in the world. Through a fullstack bootcamp, I am
+                        developing a Survey web page with JavaScript, HTML5, CSS3, and version control with Git, servers
+                        with Node.js and frameworks with React. I have a thirst for knowledge and the eagerness to keep
+                        strengthen my programming skills to enhance my career in tech. </p>
 
-                <p class="lead" class="col-lg-10">I'm going through a transition to the tech world, as I understand
-                    the
-                    importance and the impact it can make in the world. Through a fullstack bootcamp, I have learned
-                    how
-                    to
-                    develop a web with JavaScript, HTML5, CSS3, and version control with Git, servers with Node.js
-                    and
-                    frameworks, React. </p>
-                <p class="lead" class="col-lg-10"> I have a thirst for knowledge and I’m eager to learn more
-                    technologies
-                    and programming languages to enhance my career in tech.</p>
+                </article>
             </div>
         </div>
         <hr>
 
 
         <!-- --------------------------SKILLS &---------------- -->
-        <div class="row">
+        <div class="row" id="bottom">
             <!-- Skills -->
             <div id="skills" class="col-lg-4">
-                <h2>SKILLS/HABILIDADES</h2>
+                <h2>Skills</h2>
                 <div class="skillList">
-                    <ul>
-                        <h3><u>PROFESSIONAL</u></h3>
-                        <li>
-                            <label id="skill">HTML5</label><progress value="25" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">CSS3 </label><progress value="25" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">JAVASCRIPT </label><progress value="15" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">ILLUSTRATOR</label><progress value="40" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">PHOTOSHOP</label><progress value="40" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">SOLIDWORKS</label><progress value="45" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">AUTOCAD</label><progress value="45" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">OFFICE</label><progress value="45" max="50"></progress>
-                        </li>
 
-                    </ul>
-                    <ul>
-                        <h3><u>PERSONAL</u></h3>
-                        <li>
-                            <label id="skill">Communication</label><progress value="40" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">Teamwork</label><progress value="50" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">Adaptability</label><progress value="45" max="50"></progress>
-                        </li>
-                        <li>
-                            <label id="skill">Problem solving</label><progress value="40" max="50"></progress>
-                        </li>
+                    <h4><u>Professional</u></h4>
+                    <div class="Development">
+                        <figure class="figure">
+                            <img src="./imgs/icons8-javascript-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">JavaScript</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-html-5-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">HTML5</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-css3-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">CSS3</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-react-native-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">React</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-nodejs-512.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">NodeJS</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-visual-studio-512.png" class="figure-img img-fluid rounded"
+                                alt="JS">
+                            <figcaption class="figure-caption">VisualCode</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-git-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">gitHub</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-sql-100.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">SQL</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-rest-api-100.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">API</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <label id="skill">Software Development</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 35%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="GraphicDesign">
+                        <figure class="figure">
+                            <img src="./imgs/ai.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">Illustrator</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/photoshop.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">Photoshop</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/indesign.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">InDesign</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-adobe-xd-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">AdobeXD</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <label id="skill">Graphic Design</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
 
-                    </ul>
+                    </div>
+                    <div class="Design3D">
+                        <figure class="figure">
+                            <img src="./imgs/icons8-autodesk-autocad-500.png" class="figure-img img-fluid rounded"
+                                alt="JS">
+                            <figcaption class="figure-caption">AutoCAD</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-solidworks-480.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">SolidWorks</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-google-sketchup-512.png" class="figure-img img-fluid rounded"
+                                alt="JS">
+                            <figcaption class="figure-caption">SketchUp</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img src="./imgs/icons8-keyshot-384.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">KeyShot</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <label id="skill">3D Design</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="Office">
+                        <figure class="figure">
+                            <img src="./imgs/icons8-office-365-500.png" class="figure-img img-fluid rounded" alt="JS">
+                            <figcaption class="figure-caption">Office</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <label id="skill">Microsoft Office</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="Personal">
+                        <ul>
+                            <h4><u>Personal</u></h4>
+                            <li>
+                                <label id="skill">Adaptability</label>
+                            </li>
+                            <li>
+                                <label id="skill">Teamwork</label>
+                            </li>
+                            <li>
+                                <label id="skill">Problem solving</label>
+                            </li>
+                            <li>
+                                <label id="skill">Self-learning</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="Languages">
 
-                    <h2>LANGUAGES</h2>
+                    <h3>Languages</h3>
                     <ul>
                         <li>
-                            <label id="language">Spanish(Native) </label><progress value="50" max="50"></progress>
+                            <label id="language">Spanish </label>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </li>
                         <li>
-                            <label id="language">English </label><progress value="50" max="50"></progress>
+                            <label id="language">English </label>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </li>
                         <li>
-                            <label id="language">Deutsch </label><progress value="15" max="50"></progress>
+                            <label id="language">German </label>
                         </li>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -185,65 +287,87 @@
                 <article>
                     <div class="Experience">
 
-                        <h2>EXPERIENCE</h2>
+                        <h2>Experience</h2>
+                        <br>
                         <div class="Experience1">
-                            <h3><u>PROJECT DESIGNER</u></h3>
+                            <h4><u> Project Designer</u></h4>
                             <ul>
-                                <h4><i>ART & CRAFT GROUP</i></h4>
+                                <h4><i>Art & Craft Group</i></h4>
+                                <h6>Oct. 2018 - Dec. 2019</h6>
+                                <br>
                                 <li>
-                                    Concept & development of Interior Design related projects, such as
-                                    kitchens, closets, etc.
+                                    In charge of the design & installation of residential closets & bathroom cabinets at
+                                    Santa-Fe Apartment Tower (Gdl).
+
                                 </li>
+                                <br>
                                 <li>
-                                    Cost estimates.
+                                    In charge of the design & installation of residential kitchens.
                                 </li>
                             </ul>
                         </div>
-
+                        <br>
                         <div class="Experience2">
-                            <h3><u>DESIGN DEPARTMENT</u></h3>
+                            <div>
+                                <h4><u> Design Department</u></h4>
+                                <ul>
+                                    <h4><i>Omega Group</i></h4>
+                                    <h6>Nov. 2017 - July 2018</h6>
+                                    <br>
+                                    <li>
+                                        Did an on-site supervision for the assembly & installation of exhibition stands
+                                        at FIL Gdl 2017.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Certification in CNC programming.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Education</h2>
+                    <div class="Education">
+
+                        <div>
+                            <h4><u>Industrial Design Degree</u></h4>
                             <ul>
-                                <h4><i>OMEGA GROUP</i></h4>
-                                <li>
-                                    Concept & development of Exhibition Stands.
-                                </li>
-                                <li>
-                                    Cost estimates.
-                                </li>
+                                <h4><i>Universidad de Guadalajara</i></h4>
+                                <li>Specialization in Urban Desing</li>
+
+                                <li>5 years of education with a semester abroad in Chile.</li>
+
                             </ul>
                         </div>
                     </div>
-                    <div class="Education">
 
-                        <h2>EDUCATION</h2>
-                        <div class="Experience1">
+                    <div class="Courses">
+
+                        <h2>Courses</h2>
+                        <br>
+                        <div >
                             <div>
-                                <h3><u>FullStack Bootcamp</u></h3>
+                                <h4><u>FullStack Bootcamp</u></h4>
                                 <ul>
-
+                                    <br>
                                     <h4><i>WemanConnect</i></h4>
                                     <li>3 month full-time web developer bootcamp. Gaining experience in
                                         JavaScript, HTML, CSS & more.</li>
                                 </ul>
                             </div>
                             <div>
-
-                                <h3><u>Interior Design Certification</u></h3>
+                                <br>
+                                <h4><u>Interior Design Certification</u></h4>
                                 <ul>
                                     <h4><i>Brandhome</i></h4>
                                     <li>120 hrs theorical & practical specialization course.</li>
 
                                 </ul>
                             </div>
-                            <div>
-                                <h3><u>Industrial Design Degree</u></h3>
-                                <ul>
-                                    <h4><i>Universidad de Guadalajara</i></h4>
-                                    <li>5 years of education with a semester abroad in Chile.</li>
 
-                                </ul>
-                            </div>
                         </div>
+
+
                     </div>
 
                 </article>
@@ -253,7 +377,7 @@
             <a href="#top" id="Up">Up</a>
 
         </div>
-
+    </div>
 </body>
 
 </html>
